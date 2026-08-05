@@ -20,3 +20,11 @@ for (let i = 1; i <= 3; i++) {
 
   Example: Input ("Pen", 20, 3) -> Output "Pen x3 = 60 Taka"
 */
+
+
+function receiptGenerator(name, price, qty){
+    let total = price * qty;
+    return `${name} x ${qty} = ${total} Taka`
+}
+
+console.log(receiptGenerator("pen", 20, 3));
